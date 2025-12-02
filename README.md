@@ -12,8 +12,35 @@
 > 
 >**Summary**: <br>
 >CUPID is a physics-driven deep learning (PD-DL) approach for fast MRI reconstruction that enables high-quality model training using only routine clinical images, **without access to raw k-space data**, making advanced MRI reconstruction more accessible outside specialized centers.
->
-> ## 📝 Citation
+
+## Setup
+
+### 1. Create Conda Environment and Install Requirements
+```bash
+conda env create -n cupid python=3.12 -y
+conda activate cupid
+
+cd CUPID
+pip install requirement.txt
+```
+
+### 2. External Libraries Clone the necessary external code for 2D DWT/DCTWT
+CUPID relies on advanced wavelet transforms implemented in the `pytorch_wavelets` library. Clone it into your workspace:
+```
+git clone https://github.com/fbcotter/pytorch_wavelets
+```
+
+### 3. Data Preparation
+In our retrospective experiments, we used the [fastMRI](https://fastmri.med.nyu.edu/) dataset, acquired with relevant institutional review board approvals. More information regarding this is included in `data/README.md`.
+
+### 4. Zero-Shot Experiments
+Once the environment is configured and data is prepared, run zero-shot training and evaluation:
+```
+bash scripts/train_CUPID_retro.sh
+```
+The script performs retrospective training using default hyperparameters. Configurations can be customized by modifying YAML files in `configs/` or adjusting shell scripts in `scripts/`.
+
+## 📝 Citation
 ```bibtex
 
 @inproceedings{alcalar2025cupid,
