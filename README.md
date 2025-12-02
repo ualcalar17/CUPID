@@ -13,6 +13,47 @@
 >**Summary**: <br>
 >CUPID is a physics-driven deep learning (PD-DL) approach for fast MRI reconstruction that enables high-quality model training using only routine clinical images, **without access to raw k-space data**, making advanced MRI reconstruction more accessible outside specialized centers.
 
+## 📁 Project Structure
+
+```bash
+CUPID/
+├── configs/                       # YAML configuration files
+│   ├── data_config.yaml           # Dataset & loader settings
+│   ├── model_config.yaml          # Model architecture & hyperparameters
+│   └── sparsity_config.yaml       # Sparsity priors / regularization settings
+│
+├── data/                          # Example datasets or user-provided inputs
+│   ├── ...
+│   └── README.md
+│
+├── pytorch_wavelets/              # Third-party dependency (not modified)
+│
+├── scripts/
+│   └── train_CUPID_retro.sh       # Shell script to launch retrospective zero-shot training
+│
+├── src/
+│   ├── data/
+│   │   ├── loader.py              # Dataset + dataloader utilities
+│   │   └── mri_ops.py             # MRI operators (CG, E_Omega, FFT, etc.)
+│   │
+│   ├── models/
+│   │   ├── compressed_sensing.py  # Baseline CS reconstruction
+│   │   ├── data_consistency.py    # DC layers for PD-DL pipeline
+│   │   ├── resnet.py              # Residual CNN backbone
+│   │   └── unrolled_net.py        # Main unrolled network architecture
+│   │
+│   ├── util/
+│   │   ├── eval_utils.py          # Metrics: PSNR, SSIM, and visualization tools
+│   │   └── sparsity_utils.py      # Compressibility loss functions
+│   │
+│   ├── perturbations.py           # Perturbation definitions
+│   └── train.py                   # Training loop for CUPID
+│
+├── LICENSE
+├── README.md
+└── requirements.txt
+```
+
 ## Setup
 
 ### 1. Create Conda Environment and Install Requirements
