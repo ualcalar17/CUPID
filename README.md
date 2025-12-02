@@ -82,8 +82,8 @@ bash scripts/train_CUPID_retro.sh
 The script performs retrospective training using default hyperparameters. Configurations can be customized by modifying YAML files in `configs/` or adjusting shell scripts in `scripts/`.
 
 ## 📝 Citation
+If you find CUPID useful in your research, please cite:
 ```bibtex
-
 @inproceedings{alcalar2025cupid,
     title     = {Fast {MRI} for All: Bridging Access Gaps by Training without Raw Data},
     author    = {Yasar Utku Alcalar and Merve Gulle and Mehmet Akcakaya},
@@ -92,3 +92,6 @@ The script performs retrospective training using default hyperparameters. Config
     url       = {https://openreview.net/forum?id=ugBmWX3H1R}
     }
 ```
+
+## Copyright & License Notice
+© 2025 Regents of the University of Minnesota — For more details, please see `LICENSE`.
