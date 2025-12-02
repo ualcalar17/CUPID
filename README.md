@@ -65,8 +65,8 @@ cd CUPID
 pip install requirement.txt
 ```
 
-### 2. External Libraries Clone the necessary external code for 2D DWT/DCTWT
-CUPID relies on advanced wavelet transforms implemented in the `pytorch_wavelets` library. Clone it into your workspace:
+### 2. External Libraries
+CUPID relies on advanced wavelet transforms (2D DWT/DCTWT) implemented in the `pytorch_wavelets` library. Clone it into your workspace:
 ```
 git clone https://github.com/fbcotter/pytorch_wavelets
 ```
