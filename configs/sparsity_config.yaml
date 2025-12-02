@@ -1,0 +1,8 @@
+CS:
+  wave: "bior1.5" # Use only when using DWT
+  wavelet_type: "dctwt" # dctwt or dwt
+  levels: 4
+  cs_unrolls: 10
+  cg_mu: 0.1
+  cg_iter_cs: 10
+  tau: 0.01

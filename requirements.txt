@@ -1,0 +1,9 @@
+matplotlib==3.10.7
+numpy==2.3.5
+Pillow==12.0.0
+PyYAML==6.0.3
+setuptools==75.1.0
+scikit-image==0.25.1
+torch==2.5.1
+torchvision==0.20.1
+tqdm==4.67.1

@@ -1,0 +1,17 @@
+nb_unroll_blocks: 10
+
+ResNet:
+  nb_res_blocks: 15
+  channels: 64
+  kernel_size: 3
+  stride: 1
+  padding: 1
+  bias: false
+  scalar: 0.1
+  use_checkpointing: true
+  weights_mean: 0.0
+  weights_std: 0.05
+
+DC:
+  CG_Iter: 15
+  mu: 0.05

@@ -1,0 +1,9 @@
+dataset_type: "PD"
+
+mask:
+  ACS_length: 24
+  acc_rate: 4
+  mask_type: 'equidistant'
+
+PD:
+  data_path: "data/PD/pd_01.npy"
