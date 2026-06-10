@@ -7,7 +7,7 @@
 </p>
 
 > **Fast MRI for All: Bridging Access Gaps by Training without Raw Data**<br>
-> [Yasar Utku Alcalar](https://utkualcalar.github.io/), Merve Gulle, [Mehmet Akcakaya](https://imagine.umn.edu/people/mehmet-akcakaya) <br>
+> [Yasar Utku Alcalar](https://utkualcalar.github.io/), [Merve Gulle](https://scholar.google.com/citations?user=Pmu-yJYAAAAJ&hl=en), [Mehmet Akcakaya](https://imagine.umn.edu/people/mehmet-akcakaya) <br>
 > Neural Information Processing Systems (NeurIPS) 2025
 > 
 >**Summary**: <br>
